@@ -1,0 +1,17 @@
+<RCC>
+  <qresource prefix="Icons/Media">
+    <file>assets/Sahayak.png</file>
+    <file>assets/IMG_20220829_154131.jpg</file>
+    <file alias="icons8-penduin-64.png">assets/icons8-penguin-64.png</file>
+    <file alias="icon_settings.png">assets/icon_settings.png</file>
+    <file alias="Icon_pata_nahi.png">assets/Icon_pata_nahi.png</file>
+    <file alias="icon2.png">assets/icon2.png</file>
+    <file alias="icons8-mic-64.png">assets/icons8-mic-64.png</file>
+    <file alias="send (1).png">assets/send (1).png</file>
+  </qresource>
+  <qresource prefix="Image/Media">
+    <file>assets/IMG_20220829_151117.jpg</file>
+    <file>assets/pexels-pixabay-247676.jpg</file>
+    <file alias="background.png">assets/background.png</file>
+  </qresource>
+</RCC>
