@@ -1,7 +1,5 @@
 <RCC>
   <qresource prefix="Icons/Media">
-    <file>assets/Sahayak.png</file>
-    <file>assets/IMG_20220829_154131.jpg</file>
     <file alias="icons8-penduin-64.png">assets/icons8-penguin-64.png</file>
     <file alias="icon_settings.png">assets/icon_settings.png</file>
     <file alias="Icon_pata_nahi.png">assets/Icon_pata_nahi.png</file>

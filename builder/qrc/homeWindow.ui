@@ -253,7 +253,7 @@ border-radius:35px;</string>
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">image: url(:/Icons/Media/assets/Sahayak.png);</string>
+                   <string notr="true">image: url(:/Icons/Media/icons8-penduin-64.png);</string>
                   </property>
                   <property name="frameShape">
                    <enum>QFrame::StyledPanel</enum>

@@ -135,6 +135,12 @@ border:none;</string>
              </item>
              <item alignment="Qt::AlignBottom">
               <widget class="QFrame" name="frame_17">
+               <property name="minimumSize">
+                <size>
+                 <width>70</width>
+                 <height>70</height>
+                </size>
+               </property>
                <property name="frameShape">
                 <enum>QFrame::StyledPanel</enum>
                </property>
@@ -142,6 +148,12 @@ border:none;</string>
                 <enum>QFrame::Raised</enum>
                </property>
                <layout class="QGridLayout" name="gridLayout_5">
+                <property name="leftMargin">
+                 <number>4</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>11</number>
+                </property>
                 <item row="0" column="0">
                  <widget class="QPushButton" name="pushButton_6">
                   <property name="minimumSize">
@@ -253,7 +265,7 @@ border-radius:35px;</string>
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">image: url(:/Icons/Media/Sahayak.png);</string>
+                   <string notr="true">image: url(:/Icons/Media/icons8-penduin-64.png);</string>
                   </property>
                   <property name="frameShape">
                    <enum>QFrame::StyledPanel</enum>
@@ -356,7 +368,7 @@ border-radius:20px</string>
                  <rect>
                   <x>0</x>
                   <y>0</y>
-                  <width>1117</width>
+                  <width>1114</width>
                   <height>514</height>
                  </rect>
                 </property>
@@ -505,31 +517,6 @@ hr { height: 1px; border-width: 0; }
                  </widget>
                 </item>
                </layout>
-              </widget>
-             </item>
-             <item>
-              <widget class="QFrame" name="frame_9">
-               <property name="minimumSize">
-                <size>
-                 <width>60</width>
-                 <height>0</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>50</width>
-                 <height>16777215</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">image: url(:/Icons/Media/Icon_pata_nahi.png);</string>
-               </property>
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
               </widget>
              </item>
             </layout>
