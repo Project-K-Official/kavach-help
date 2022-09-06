@@ -13,32 +13,33 @@ import XHelp as App
 
 import random
 import json
-import torch
+# change35
+# import torch
 
 class ChatBot:
    responseHandler = None
-   
+
    device = None
    model = None
    intents = None
    data = None
-   
+
    reportActive = None
    reportMessages = None
-   
+
    def start (responseHandler):
       ChatBot.responseHandler = responseHandler
       ChatBot.reportActive = False
       ChatBot.reportMessages = ''
-   
+
    def reset ():
       App.Configuration.SESSION_ID += 1
-   
+
    def sendResponse (message):
       original_message = str(message).strip()
       Output(message)
       return None
-     
+
 Greet_patterns= ["HI","HEY","HOW ARE YOU","IS ANYONE THERE?","HELLO","GOOD DAY"]
 Greet_responses=["Hey :-)","Hello ","Hi there, what can I do for you?","Hi there", "how can I help?"]
 
@@ -98,15 +99,15 @@ def Output(user):
 
     elif(user=='1'):
         ChatBot.reportMessages+='\n'
-        ChatBot.reportMessages+= "report cyber bullying related issues"    
+        ChatBot.reportMessages+= "report cyber bullying related issues"
 
     else:
         ChatBot.reportMessages+='\n'
         ChatBot.reportMessages+= user
 
     user=user.upper()
- 
- 
+
+
     if user in Greet_patterns:
         i=rand(len(Gratitude_responses))
         Send_Output(Greet_responses[i])
@@ -115,7 +116,7 @@ def Output(user):
     elif user in Adios_patterns:
         i=rand(len(Adios_responses))
         Send_Output(Adios_responses[i]+finish_text)
-       
+
 
     elif user in Gratitude_patterns:
         i=rand(len(Gratitude_responses))
@@ -135,18 +136,18 @@ def Output(user):
     elif user in Spam_patterns:
         i=rand(len(Spam_responses))
         Send_Output(Spam_responses[i])
-        
-        
+
+
     elif user in spam2_patterns:
         i=rand(len(spam2_responses))
         Send_Output(spam2_responses[i]+finish_text)
 
-         
+
     elif user in spam3_patterns:
         i=rand(len(spam3_responses))
         Send_Output(spam3_responses[i]+finish_text)
- 
-         
+
+
     elif user in Actions_patterns:
         i=rand(len(Actions_responses))
         Send_Output(Actions_responses[i]+finish_text)
@@ -154,14 +155,13 @@ def Output(user):
 
     elif user in end_patterns:
         i=rand(len(end_responses))
-        Send_Output(end_responses[i])    
+        Send_Output(end_responses[i])
 
         App.core.EmailClient.sendMessage(ChatBot.reportMessages)
 
 
     else:
         Send_Output("Sorry, I could not get you, Please rephrase.")
-         
+
 def Send_Output(message):
     ChatBot.responseHandler(message)
-    

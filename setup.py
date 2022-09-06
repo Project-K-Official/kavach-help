@@ -16,8 +16,11 @@ setup(
     author_email="kabirdhruw24@gmail.com",
     description=DESCRIPTION,
     packages=find_packages(),
-    install_requires=['PyQt5', 'nltk', 'torch', 'torchvision', 'torchaudio'],
-    keywords=['PyQt5', 'nltk', 'torch', 'torchvision', 'torchaudio'],
+    # change35
+    # install_requires=['PyQt5', 'nltk', 'torch', 'torchvision', 'torchaudio'],
+    # keywords=['PyQt5', 'nltk', 'torch', 'torchvision', 'torchaudio'],
+    install_requires=['PyQt5'],
+    keywords=['PyQt5'],
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
