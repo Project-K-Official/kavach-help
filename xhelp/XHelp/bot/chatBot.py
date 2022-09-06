@@ -13,7 +13,6 @@ import XHelp as App
 
 import random
 import json
-# change35
 # import torch
 
 class ChatBot:

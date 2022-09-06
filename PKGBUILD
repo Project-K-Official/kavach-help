@@ -7,8 +7,6 @@ arch=(x86_64)
 url=""
 license=('GPL')
 groups=()
-# change35
-# depends=(PyQt5 nltk torch torchvision torchaudio)
 depends=(PyQt5)
 makedepends=(python-build)
 checkdepends=()
