@@ -60,7 +60,7 @@ class Application:
             "Hey there! I'm {0}, and am here to assist you!".format(
                App.Configuration.BOT_NAME,
             )
-            + "\n\nPlease Type:\n1 - to report cyber bullying related issues\n2 - to report Spamming realted isues"
+            + "\n\nPlease Type to report:\n1 - Bullying issue\n2 - Spamming issue\n3 - Doxing issue\n4 - Black-mailing issue\n5 - Other issue"
          ),
       )
    
