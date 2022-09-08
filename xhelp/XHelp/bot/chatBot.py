@@ -206,14 +206,11 @@ def Output(user):
         ChatBot.reportMessages+='\n'
         ChatBot.reportMessages+= user
     user=user.upper()
-    #if(C==0):
-     #   Send_Output("Type:\n1 - to report cyber bullying related issues\n2 - to report Spamming realted isues",end=" ")
-      #  C+=1
     
     if user in greet_patterns:
         i=rand(len(greet_responses))
         Send_Output(greet_responses[i])
-        #ChatBot.reportMessages = '' + user
+       
          
     elif user in others_patterns:
         PYA="OQ1"
@@ -223,32 +220,32 @@ def Output(user):
         PYA="BQ1"
         Send_Output(blackmail_responses[0]+ BQ1[0]+ option_text)
 
+
+
     elif user in adios_patterns:
         i=rand(len(adios_responses))
         Send_Output(adios_responses[i]+finish_text)
-        #Send_Output(finish_text)
-        #ChatBot.reportMessages = '' + user
          
 
     elif user in gratitude_patterns:
         i=rand(len(gratitude_responses))
         Send_Output(gratitude_responses[i]+finish_text)
-        #Send_Output(finish_text)
-        #ChatBot.reportMessages = '' + user 
-
+        
     elif user in report_patterns:
         i=rand(len(report_responses))
         Send_Output(report_responses[i])
-        #ChatBot.reportMessages = '' + user
-         
+
+
     elif user in actions_patterns:
         i=rand(len(actions_responses))
         Send_Output(actions_responses[i]+finish_text)
 
+
     elif user in end_patterns:
         i=rand(len(end_responses))
         Send_Output(end_responses[i])    
-        App.core.EmailClient.sendMessage(ChatBot.reportMessages)
+        #App.core.EmailClient.sendMessage(ChatBot.reportMessages)
+
 
 #CYBERBULLING-RELATED
 
@@ -308,9 +305,11 @@ def Output(user):
         Send_Output(CY5[0]+finish_text)
 
 
+
     elif user in spam_patterns:
         i=rand(len(spam_responses))
         Send_Output(spam_responses[i])    
+
 
 #SPAMMING_TEXT-RELATED
 
@@ -319,21 +318,26 @@ def Output(user):
         PYA="STQ1"
         Send_Output(spam_text_responses[i]+STQ1[0]+ option_text)
     
+
     elif (user in"noNO") and (PYA == "STQ1"):
         PYA= "STQ3"
         Send_Output(STN1[0]+ STQ3[0] + option_text)
+
 
     elif (user in "yesYES") and (PYA == "STQ1"):
         PYA= "STQ2"
         Send_Output(STQ2[0] + option_text)
 
+
     elif (user in"noNO") and (PYA == "STQ2"):
         PYA= "STQ3"
         Send_Output(STN2[0] + STQ3[0] + option_text)
 
+
     elif (user in "yesYES") and (PYA == "STQ2"):
         PYA= "STQ3"
         Send_Output(STQ3[0] + option_text)
+
 
     elif (user in"noNO") and (PYA == "STQ3"):
         PYA= "STQ4"
@@ -343,13 +347,17 @@ def Output(user):
         PYA= "STQ4"
         Send_Output(STQ4[0] + option_text)
 
+
     elif (user in"noNO") and (PYA == "STQ4"):
         PYA= "NULL"
         Send_Output(STN4[0] + finish_text)
 
+
     elif (user in "yesYES") and (PYA == "STQ4"):
         PYA= "NULL"
         Send_Output(STY4[0] + finish_text) 
+
+
 
 #SPAMMING_ADS-RELATED
 
@@ -357,47 +365,60 @@ def Output(user):
         PYA="SAQ1"
         Send_Output(spam_ads_responses[0]+SAQ1[0]+ option_text)
 
+
     elif (user in"noNO") and (PYA == "SAQ1"):
         PYA= "SAQ3"
         Send_Output(SAN1[0]+ SAQ3[0] + option_text)
+
 
     elif (user in "yesYES") and (PYA == "SAQ1"):
         PYA= "SAQ2"
         Send_Output(SAQ2[0] + option_text)
 
+
     elif (user in"noNO") and (PYA == "SAQ2"):
         PYA= "SAQ3"
         Send_Output(SAN2[0]+ SAQ3[0] + option_text)
+
 
     elif (user in "yesYES") and (PYA == "SAQ2"):
         PYA= "SAQ3"
         Send_Output(SAY2[0] +SAQ3[0] + option_text)
 
+
     elif (user in"noNO") and (PYA == "SAQ3"):
         PYA= "SAQ4"
         Send_Output(SAN3[0]+ SAQ4[0] + option_text)
+
 
     elif (user in "yesYES") and (PYA == "SAQ3"):
         PYA= "SAQ4"
         Send_Output(SAQ4[0] + option_text)
 
+
     elif (user in"noNO") and (PYA == "SAQ4"):
         PYA= "SAQ5"
         Send_Output(SAN4[0]+ SAQ5[0] + option_text)
+
 
     elif (user in "yesYES") and (PYA == "SAQ4"):
         PYA= "NULL"
         Send_Output(SAY4[0]  + finish_text)
 
+
     elif (user in"noNO") and (PYA == "SAQ5"):
         PYA= "NULL"
         Send_Output(SAN5[0] + finish_text)
+
 
     elif (user in "yesYES") and (PYA == "SAQ5"):
         PYA= "NULL"
         Send_Output(SAY5[0]  + finish_text)
 
-#Doxing-related
+
+
+#Doxing-related 
+
     elif user in dox_patterns:
         PYA="DQ1"
         Send_Output(dox_responses[0]+DQ1[0]+ option_text)
@@ -428,29 +449,37 @@ def Output(user):
         PYA="BQ1"
         Send_Output(blackmail_responses[0]+ BQ1[0]+ option_text)
 
+
     elif (user in"noNO") and (PYA == "BQ1"):
         PYA= "BQ3"
         Send_Output(BQ3[0] )
+
 
     elif (user in "yesYES") and (PYA == "BQ1"):
         PYA= "BQ2"
         Send_Output(BQ2[0])
     
+
     elif PYA=="BQ2":
         PYA="BQ3"
         Send_Output(BQ3[0])
+
 
     elif PYA=="BQ3":
         PYA="BQ4"
         Send_Output(BQ4[0])
 
+
     elif PYA=="BQ4":
         PYA="BQ5"
         Send_Output(BQ5[0])
 
+
     elif PYA=="BQ5":
         PYA="NULL"
         Send_Output(BA5[0])
+
+
 
 #Other_issues
 
