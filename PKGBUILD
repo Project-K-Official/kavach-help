@@ -9,7 +9,7 @@ depends=('python3' 'python-pyqt5')
 makedepends=('git')
 source=("git+$url.git")
 sha256sums=('SKIP')
-#echo ${source}
+
 package() {
         install -d  ${pkgdir}/usr/share/kavach-help
         install -d  ${pkgdir}/usr/share/applications
