@@ -1,4 +1,4 @@
 [Desktop Entry]
 Name=Kavach Helpline
-Exec=helpr
+Exec=/usr/bin/kavach-help
 Icon=kavach
