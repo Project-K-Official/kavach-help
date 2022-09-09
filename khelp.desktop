@@ -1,4 +1,4 @@
 [Desktop Entry]
 Name=Kavach Helpline
-Exec=/usr/bin/kavach-help
+Exec=python3 /usr/bin/kavach-help
 Icon=kavach
